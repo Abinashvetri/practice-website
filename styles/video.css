@@ -13,7 +13,8 @@
 .video-title{
   margin-top: 0px;
   font-weight: 500;
-  line-height: 14px;
+  line-height: 20px;
+ font-size: 14px;
   
   margin-bottom: 10px;
 }
@@ -38,7 +39,12 @@
   column-gap: 16px;
   row-gap: 14px;
 }
-@media (max-width:750px){
+@media (max-width:480px){
+  .video-grid{
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width:481px )and (max-width:750px){
   .video-grid{
     grid-template-columns: 1fr 1fr;
   }
